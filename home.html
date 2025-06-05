@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skill List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Dodaj baner powitalny -->
+	<div id="welcome-banner">
+		<a>
+			<img src="pic.jpg" alt="Welcome Banner">
+		</a>
+		<!-- Dodaj linki do social media -->
+		<div id="social-links">
+			<a href="https://www.twitch.tv/coach_bimbaj" target="_blank">Twitch</a>
+			<a href="https://www.youtube.com/@Coach_Bimbaj" target="_blank">YouTube</a>
+			<a href="https://discord.com/invite/PuRtWtAjeh" target="_blank">Discord</a>
+		</div>
+		<!-- Dodaj linki do kalkulatorów -->
+		<div id="local-links">
+			<a href="http://coachbimbaj.cba.pl/index.html">Defenders</a>
+			<a href="http://coachbimbaj.cba.pl/home.html">Skills</a>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="container">
+			<div class="column">
+			  <h2>Position</h2>
+			  <select id="positions-list"></select>
+			  <div id="position-img-container">
+				<img id="position-img" src="" alt="Position Image">
+			  </div>
+			</div>
+			<div class="column">
+			  <h2>All Skills</h2>
+			  <div id="skills-list" class="skill-list"></div>
+			</div>
+			<div class="column">
+			  <h2>Recommended Skills</h2>
+			  <div id="recommended-skills-list" class="skill-list"></div>
+			  <button onclick="fetchSkillsAndDisplayRecommended()">Generate</button>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

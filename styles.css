@@ -1,0 +1,146 @@
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 20px;
+	padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Wyśrodkowanie kolumn na większych ekranach */
+  flex-wrap: wrap;
+  margin: 0 auto; /* Wyśrodkowanie kontenera na szerokich ekranach */
+  max-width: 1200px; /* Ograniczenie szerokości kontenera na szerokich ekranach */
+}
+
+
+  
+h1 {
+	text-align: center;
+	margin-top: 20px;
+}
+		
+.column {
+  padding: 20px;
+  flex: 0 0 calc(33.33% - 40px); /* Szerokość kolumn z uwzględnieniem paddingu */
+  margin-bottom: 20px; /* Dodanie marginesu na dole dla większej separacji */
+  max-width: calc(33.33% - 40px); /* Maksymalna szerokość kolumn */
+}
+
+h1 {
+	text-align: center;
+	margin-top: 20px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.skill-list {
+  overflow-y: auto; /* Dodajemy pasek przewijania, jeśli zawartość jest większa niż wysokość */
+}
+
+.column.full-height {
+  height: 100vh;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  pointer-events: none;
+}
+
+.skill-item,
+.recommended-skill-item {
+  margin-bottom: 5px;
+}
+
+.recommended-skill-item {
+  background-color: lightgreen;
+}
+
+#position-img-container {
+  margin-top: 20px;
+  text-align: center; /* Wyśrodkowanie obrazka w kolumnie */
+}
+
+#positions-list {
+  margin: 0 auto; /* Ustawia marginesy na auto, co spowoduje wyśrodkowanie elementu w poziomie */
+  width: 100%; /* Ustawienie szerokości na 100% */
+  text-align: center;
+}
+
+
+#position-img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block; /* Aby zastosować margin: 0 auto; */
+  margin: 0 auto; /* Centrowanie obrazka */
+}
+
+#welcome-banner {
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+
+#welcome-banner img {
+	max-width: 100%;
+	height: auto;
+}
+
+.form-group {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: -10px; /* Zmniejszenie marginesu na samym dole */
+}
+
+/* Dodatkowy styl dla urządzeń o szerokości poniżej 768px (typowo tablety i telefony) */
+@media screen and (max-width: 768px) {
+  .column {
+    flex: 100%; /* Kolumny będą zajmować 100% szerokości na urządzeniach mobilnych */
+    max-width: 100%; /* Maksymalna szerokość kolumn na urządzeniach mobilnych */
+  }
+  
+  .skill-list {
+    overflow-y: visible; /* Wyłączamy pasek przewijania */
+  }
+}
+
+
+/* Dodaj styl do linków */
+#social-links {
+	text-align: center;
+	margin-top: 10px;
+}
+
+#social-links a {
+	margin: 0 10px;
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+}
+
+#social-links a:hover {
+	color: #4CAF50;
+}
+
+/* Dodaj styl do linków */
+#local-links {
+	text-align: center;
+	margin-top: 10px;
+}
+
+#local-links a {
+	margin: 0 10px;
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+}
+
+#local-links a:hover {
+	color: #4CAF50;
+}
